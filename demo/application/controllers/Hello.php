@@ -14,6 +14,10 @@ class Hello extends CI_Controller
             'hello' => $hello
         ]);
     }
+    public function getURI($id = null)
+    {
+        $this->load->view('v_show', ['id' => $id]);
+    }
 }
 
 /* End of file Hello.php */
