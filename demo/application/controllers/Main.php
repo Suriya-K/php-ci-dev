@@ -7,7 +7,11 @@ class Main extends CI_Controller
 
     public function index($new_path = null)
     {
-        $this->load->view('v_main');
+        $this->load->helper('url');
+        $this->load->view('v_main', [
+            
+            'base_url' => base_url()
+        ]);
     }
 }
 
