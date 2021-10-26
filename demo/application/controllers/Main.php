@@ -9,8 +9,8 @@ class Main extends CI_Controller
     {
         $this->load->helper('url');
         $this->load->view('v_main', [
-            
-            'base_url' => base_url()
+            'base_url' => base_url(),
+            'body' => 'v_details'
         ]);
     }
 }
