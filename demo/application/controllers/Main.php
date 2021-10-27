@@ -13,6 +13,12 @@ class Main extends CI_Controller
             'body' => 'v_details'
         ]);
     }
+
+    public function get_form()
+    {
+        $this->input->post();
+        var_dump($_POST);
+    }
 }
 
 /* End of file Controllername.php */

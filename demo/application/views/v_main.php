@@ -14,20 +14,6 @@
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,7 +21,7 @@
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/supakjack/check-3-files/main/frontend/src/assets/hh-logo.jpeg">
 
   <title>
-    12 แฟ้มประมวลผล .DBF
+    Input Form
   </title>
 
 
@@ -61,30 +47,10 @@
 </head>
 
 <body class="index-page bg-gray-200">
-
-
-  <!-- Navbar -->
-
-
-  <header class="header-2">
-    <div class="page-header min-vh-50 relative" style="background-image: url('<?= $base_url ?>templates/assets/img/bg-hh.jpg')">
-      <span class="mask bg-gradient-dark opacity-5"></span>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 text-center mx-auto">
-            <h1 class="text-white pt-3 mt-n5">12 แฟ้มประมวลผล .DBF</h1>
-            <p class="lead text-white mt-3">กรอกเลขรหัสและอัพโหลไฟล์ .txt จากนั้นกดปุ่ม "ประมวลผลไฟล์"
-          </div>
-        </div>
-      </div>
+  <div class="card card-frame">
+    <div class="card-body">
+      <?= $this->load->view($body, [], true) ?>
     </div>
-  </header>
-
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-
-    <?= $this->load->view($body, [], true) ?>
-
-
   </div>
 
 
