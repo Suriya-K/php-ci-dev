@@ -50,6 +50,7 @@
   <div class="card card-frame">
     <div class="card-body">
       <?= $this->load->view($body, [], true) ?>
+      
     </div>
   </div>
 

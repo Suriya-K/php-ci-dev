@@ -16,8 +16,20 @@ class Main extends CI_Controller
 
     public function get_form()
     {
-        $this->input->post();
-        var_dump($_POST);
+        $post = $this->input->post();
+        $this->load->helper('url');
+        $this->load->view('v_main', [
+            'base_url' => base_url(),
+            'body' => 'v_result',
+            'first_name' => $post['first_name'],
+            'last_name' => $post['last_name'],
+            'age' => $post['age'],
+            'mobilephone' => $post['mobilephone'],
+            'address' => $post['address'],
+            'email' => $post['email'],
+            'u_id' => $post['u_id'],
+            'u_password' => $post['u_password']
+        ]);
     }
 }
 
