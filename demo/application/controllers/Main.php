@@ -4,7 +4,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Main extends CI_Controller
 {
-
     public function index($new_path = null)
     {
         $this->load->helper('url');
@@ -13,7 +12,6 @@ class Main extends CI_Controller
             'body' => 'v_details'
         ]);
     }
-
     public function get_form()
     {
         $post = $this->input->post();
