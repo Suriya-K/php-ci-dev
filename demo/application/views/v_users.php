@@ -1,3 +1,10 @@
+<!--- CSS --->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+<!--- Jquery --->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!--- plug in data table --->
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
 <section class="pt-5 mt-5">
     <div class="container">
         <div class="row justify-content-center">
@@ -11,6 +18,7 @@
                     </div>
                 </div>
                 <div class="container">
+                    <!---
                     <div class="row justify-space-between py-2">
                         <div class="col-lg-6 mx-auto">
                             <form action="<?= base_url() ?>Users/search_data_table" method="post" role="form text-start">
@@ -21,10 +29,11 @@
                             </form>
                         </div>
                     </div>
+                    --->
                 </div>
                 <div class="card">
                     <div class="table-responsive">
-                        <table class="table align-items-center mb-0">
+                        <table id="table_id" class="table align-items-center mb-0">
                             <thead>
                                 <tr>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ลำดับ</th>
@@ -78,6 +87,21 @@
         </div>
     </div>
 </section>
+<script>
+    $(document).ready(function() {
+        $('#table_id').DataTable();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
 
 
 <!----- Delete Modal ----->
