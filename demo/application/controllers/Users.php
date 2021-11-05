@@ -71,11 +71,10 @@ class Users extends CI_Controller
         $this->load->helper('url');
         $search = $this->input->post('search');
         $search_result = $this->user_model->search($search);
-        var_dump($search_result);
         $this->load->view('v_main', [
             'base_url' => base_url(),
             'body' => 'v_users',
-            'user_data' => $search_result
+            'users_data' => $search_result
         ]);
     }
 
