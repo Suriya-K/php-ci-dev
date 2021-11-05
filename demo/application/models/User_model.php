@@ -16,6 +16,19 @@ class User_model extends CI_Model
         return $users_data;
     }
 
+    public function search($search_word)
+    {
+        $this->db->from('users');
+        $this->db->like('name', $search_word);
+        $this->db->or_like('email', $search_word);
+        $this->db->or_like('head_position', $search_word);
+        $this->db->or_like('sub_position', $search_word);
+        $this->db->or_like('salary', $search_word);
+        $this->db->or_like('status', $search_word);
+        $query = $this->db->get()->result();
+        return $query;
+    }
+
     public function get($id)
     {
         $user_data = $this->db->get_where("users", ["id" => $id])->row();

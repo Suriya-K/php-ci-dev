@@ -1,6 +1,6 @@
 <div class="card card-plain">
     <div class="card-body pb-3">
-        <form action="<?= base_url() ?>Users/update_data_table/<? $user_data->id ?>" method="post" role="form text-start">
+        <form action="<?= base_url() ?>Users/update_data_table/<?= $user_data->id ?>" method="post" role="form text-start">
             <a>แก้ไขข้อมูลผู้ใช้</a>
             <div class="input-group input-group-static mb-4">
                 <label>ชื่อ - นามสกุล</label>

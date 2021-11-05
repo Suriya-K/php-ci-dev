@@ -10,6 +10,18 @@
                         </button>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row justify-space-between py-2">
+                        <div class="col-lg-6 mx-auto">
+                            <form action="<?= base_url() ?>Users/search_data_table" method="post" role="form text-start">
+                                <div class="input-group input-group-dynamic mb-4">
+                                    <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+                                    <input class="form-control" placeholder="Search" type="text" name="search">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="table-responsive">
                         <table class="table align-items-center mb-0">
